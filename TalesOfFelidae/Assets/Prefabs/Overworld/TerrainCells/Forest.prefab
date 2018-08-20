@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1549937737287250}
+  m_IsPrefabAsset: 1
+--- !u!1 &1549937737287250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4048571821147110}
+  - component: {fileID: 114202554470987500}
+  m_Layer: 0
+  m_Name: Forest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4048571821147110
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1549937737287250}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.282487, y: -2.114296, z: 5.0174117}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114202554470987500
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1549937737287250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 235cab0ded8c57e499b8269cab742354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CellWidth: 80
+  CellLength: 80
+  OverworldLocationX: 0
+  OverworldLocationY: 0
+  Directions: 01010101
+  DoorList: []
+  DifficultyLevel: 0
+  isMachine: 0
+  thisCellType: 0
+  lakePrefab: {fileID: 11400000, guid: 1d0c4eb59c6a31f41af367c883791825, type: 2}
+  floorPrefab: {fileID: 1738417133116408, guid: 8f5d469051c5b164b84fd5aeccd48786,
+    type: 2}
+  wallPrefab: {fileID: 1249657559562442, guid: 0956c58df2140f84f90e1f517915ffcf, type: 2}
+  PercentWalls: 55
+  BirthLimit: 4
+  DeathLimit: 3
+  SimSteps: 2

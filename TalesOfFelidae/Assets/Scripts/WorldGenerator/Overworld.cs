@@ -9,11 +9,6 @@ namespace DungeonGenerator
         public int ID;
         public Cell[,] CellMap;    //Organized as [Y, X]
 
-        public string ConvertToString()
-        {
-            return JsonUtility.ToJson(this);
-        }
-
         public void InitializeWorld(int mapWidth = 8, int mapLength = 8)
         {
             CellMap = new Cell[mapLength, mapWidth];
